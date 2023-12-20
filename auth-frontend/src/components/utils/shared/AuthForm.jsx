@@ -121,30 +121,7 @@ const AuthForm = ({ authFormType }) => {
                 <FormInput type='text' id='email' onChange={e => setUserData({...userData, [e.target.id]: e.currentTarget.value})} placeholder='Email'/>
                 <FormInput type='password' id='password' onChange={e => setUserData({...userData, [e.target.id]: e.currentTarget.value})} placeholder='Password'/>
                 <FormInput type='password' id='confirm' onChange={e => setUserData({...userData, [e.target.id]: e.currentTarget.value})} placeholder='Confirm password'/>
-
-
-
-                    {/* <label htmlFor="" id='firstname'>
-                        First Name
-                        <input type='text'/>
-                    </label>
-                    <label htmlFor="">
-                        Last Name
-                        <input type='text'/>
-                    </label>
-                    <label htmlFor="">
-                        Email
-                        <input type='text'/>
-                    </label>
-                    <label htmlFor="">
-                        Password
-                        <input type='text'/>
-                    </label>
-                    <label htmlFor="">
-                        Confirm Password
-                        <input type='text'/>
-                    </label> */}
-                    <button type="submit">Submit</button>
+                <LoginButton>{'Sign Up'}</LoginButton>
             </LoginBackground>
         </LoginWrapper>
         
